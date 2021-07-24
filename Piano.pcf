@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 13 00:00:50 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "sw1" LOCATE = SITE "E2" LEVEL 1;
+COMP "sw2" LOCATE = SITE "F3" LEVEL 1;
+COMP "sw3" LOCATE = SITE "G3" LEVEL 1;
+COMP "sw4" LOCATE = SITE "B4" LEVEL 1;
+COMP "sw5" LOCATE = SITE "K3" LEVEL 1;
+COMP "sw6" LOCATE = SITE "L3" LEVEL 1;
+COMP "sw7" LOCATE = SITE "P11" LEVEL 1;
+COMP "btn1" LOCATE = SITE "A7" LEVEL 1;
+COMP "btn2" LOCATE = SITE "M4" LEVEL 1;
+COMP "btn3" LOCATE = SITE "C11" LEVEL 1;
+COMP "btn4" LOCATE = SITE "G12" LEVEL 1;
+COMP "reset" LOCATE = SITE "N3" LEVEL 1;
+COMP "sound" LOCATE = SITE "B2" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
