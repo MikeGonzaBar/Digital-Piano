@@ -1,23 +1,7 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:50:02 05/07/2020 
-// Design Name: 
-// Module Name:    Bus 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
+// Packs the physical Basys 2 switches and push buttons into compact selection
+// buses. The bit order matches the original note map used by Notes.v.
 module Bus(
 	input sw1,
 	input sw2,
@@ -26,13 +10,13 @@ module Bus(
 	input sw5,
 	input sw6,
 	input sw7,
-   input btn1,
-   input btn2,
-   input btn3,
+	input btn1,
+	input btn2,
+	input btn3,
 	input btn4,
 	output [6:0] swBus,
-   output [3:0] noteBus
-   );
+	output [3:0] noteBus
+	);
 	
 	assign swBus[0] = sw7;
 	assign swBus[1] = sw6;
